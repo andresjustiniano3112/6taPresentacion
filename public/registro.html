@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="text-center">
+    <form class="form-signin">
+        <img class="mb-4" src="img/User-icon.png" alt="">
+        <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
+        
+        <!-- Nombre Completo -->
+        <input type="text" id="inputFullName" class="form-control mb-2" placeholder="Nombre completo" required autofocus>
+        
+        <!-- Nombre de Usuario -->
+        <input type="text" id="inputUsername" class="form-control mb-2" placeholder="Nombre de usuario" required>
+        
+        <!-- Contraseña -->
+        <input type="password" id="inputPassword" class="form-control mb-2" placeholder="Contraseña" required>
+        
+        <!-- Subir Imagen -->
+        <label class="d-block text-left">Subir imagen de perfil:</label>
+        <input type="file" id="imageUploader" class="form-control mb-3">
+        
+        <!-- Mensaje de error -->
+        <div id="msg-error" style="display:none;" class="alert alert-danger">Error al registrar el usuario</div>
+        
+        <!-- Botones -->
+        <button id="btn-register" class="btn btn-lg btn-primary btn-block" type="button">Registrarse</button>
+        <a href="login.html" class="btn btn-secondary btn-block">Cancelar</a>
+    </form>
+    <script src="js/registro.js"></script>
+</body>
+</html>
